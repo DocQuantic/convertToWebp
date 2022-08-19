@@ -18,7 +18,7 @@ def convert_to_webp(source):
     return destination
 
 def main():
-    paths = Path("/Users/williammagrini/Documents/JdR/Starfinder/Ressources/Starfinder Weapons").glob("**/*.png")
+    paths = Path("Path/To/Files").glob("**/*.png")
     for path in paths:
         webp_path = convert_to_webp(path)
         print(webp_path)
